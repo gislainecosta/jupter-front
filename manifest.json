@@ -1,0 +1,56 @@
+{
+    "version": "0.1",
+    "manifest_version": 2,
+    "author": "Marcos D.",
+    "name": "List",
+    "description": "This is an extension built by CodeBy to help VTEX developers get product information.",
+    "icons": {
+        "16": "images/codeby-16.png",
+        "32": "images/codeby-32.png",
+        "48": "images/codeby-48.png",
+        "128": "images/codeby-128.png"
+    },
+    "permissions": [
+        "tabs",
+        "<all_urls>",
+        "background",
+        "http://*/*",
+        "https://*/*",
+        "activeTab"
+    ],
+    "background": {
+        "scripts": [
+            "test.js"
+        ],
+        "persistent": true
+    },
+    "commands": {
+        "Alt+1": {
+            "suggested_key": {
+                "default": "Alt+Shift+1"
+            },
+            "description": "1"
+        },
+        "Alt+2": {
+            "suggested_key": {
+                "default": "Alt+Shift+2"
+            },
+            "description": "2"
+        },
+        "Alt+3": {
+            "suggested_key": {
+                "default": "Alt+Shift+3"
+            },
+            "description": "3"
+        },
+        "Alt+4": {
+            "suggested_key": {
+                "default": "Alt+Shift+4"
+            },
+            "description": "4"
+        }
+    },
+    "browser_action": {
+        "default_popup": "popups/default.html"
+    }
+}

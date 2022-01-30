@@ -189,7 +189,7 @@ var lis = (function () {
                                 .then(json => {
                                     let all = json[0];
    
-                                    utils.falar('Descrição do produto: ' + all.description);
+                                    utils.falar('Descrição do produto: ' + all.metaTagDescription);
                                 });
                         }, 3000);
                         break;
